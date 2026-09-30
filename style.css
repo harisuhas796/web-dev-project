@@ -1,0 +1,173 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+.nav {
+    height: 70px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid white;
+}
+.name {
+    font-size: 24px;
+    justify-content: flex-start;
+}
+.links {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    padding-left: 850px;
+}
+.links a {
+    text-decoration: none;
+}
+.links a:hover {
+    color: black;
+}
+.login {
+    margin-left: 30px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: blue;
+    color: white;
+}
+.login:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.top {
+    text-align: center;
+    padding: 70px 20px;
+    background-color: lightblue;
+}
+.top h1 {
+    font-size: 41px;
+    margin-bottom: 17px;
+}
+.top p {
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.search {
+    display: flex;
+    max-width: 600px;
+    margin: auto;
+}
+.search input {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 6px;
+    font-size: 16px;
+}
+.search button {
+    padding: 15px 26px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 6px;
+}
+.categories {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 21px;
+}
+.categories h2 {
+    margin-bottom: 20px;
+}
+.list {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.list button {
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.list button:hover {
+    background-color: blue;
+    color: white;
+}
+.listings {
+    max-width: 1100px;
+    margin: 52px auto;
+    padding: 0 20px;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.head a {
+    text-decoration: none;
+}
+.grid {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.card {
+    background-color: white;
+    border-radius: 10px;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card img {
+    width: 100%;
+    height: 180px;
+}
+.info {
+    padding: 18px;
+}
+.category {
+    font-size: 13px;
+    color: blue;
+}
+.info h3 {
+    font-size: 18px;
+}
+.price {
+    font-size: 20px;
+}
+.details {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color:black;
+    color: white;
+}
+.details:hover {
+    background-color: blue;
+}
+footer {
+    margin-top: 80px;
+    padding: 30px;
+    text-align: center;
+    background-color:gray;
+    color: white;
+}
+footer p {
+    margin: 5px;
+}
+@media (max-width: 900px) {
+
+    .grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
